@@ -11,7 +11,7 @@ const stripe=new Stripe(process.env.STRIPE_SECRET_KEY)
 
 const placeOrder=async(req,res)=>{
 
-    const frontend_url="https://food-del-frontend-rnzj.onrender.com";
+    const frontend_url="https://food-del-frontend-rnzj.onrender.com/";
     try {
         const newOrder=new orderModel({
             userId:req.body.userId,
